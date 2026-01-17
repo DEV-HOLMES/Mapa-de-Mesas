@@ -1,0 +1,70 @@
+/* BODY */
+body {
+    background-image: url(../imagem/7947569.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+}
+
+/* TABELA */
+.mapa-mesas {
+    width: 50%;
+    margin: 0 auto;
+    border-collapse: collapse;
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+
+.mapa-mesas caption {
+    margin-bottom: 25px;
+    font-size: 1.2rem;
+    font-weight: 800;
+}
+
+th,
+td {
+    text-align: center;
+    padding: 10px 14px;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.mapa-mesas tbody tr {
+    transition: background-color 0.2s ease;
+}
+
+.mapa-mesas tbody tr:hover {
+    background-color: rgba(0, 0, 0, 0.08);
+}
+
+.status.ocupado {
+    color: darkred;
+    font-weight: 800;
+    font-size: 15px;
+    transition: background-color 0.2s ease;
+}
+
+.status.ocupado:hover {
+    background-color: #B22222;
+    cursor: pointer;
+    transform: scale(1.03);
+}
+
+.status.livre {
+    color: darkgreen;
+    font-size: 15px;
+    font-weight: 800;
+    transition: background-color 0.2s ease;
+}
+
+.status.livre:hover {
+    background-color: #32CD32;
+    cursor: pointer;
+    transform: scale(1.03);
+}
+
+
+/* TFOOT */
+.mapa-mesas tfoot td {
+    font-weight: 600;
+}
